@@ -1,6 +1,6 @@
 
 //EJERCICIO 1
-/*
+
 public class Miaplicacion{
 	public static void main (String[] args)
 	{
@@ -11,7 +11,7 @@ public class Miaplicacion{
 	//c = a < b && c;
 	d = a+ b++;
 	e = ++a - b;
-	y = (float) a/b;
+	y =  a/b;
 
 	System.out.println("EL VALOR DE X ES: " + x);
     System.out.println("EL VALOR DE D ES: " + d);
@@ -31,19 +31,19 @@ else
 System.out.println("EL MAYOR ES: " + c); 
 } 
 } 
-*/
 
+*/
 //EJERCICIO 2
 /*
 public class Miaplicacion{
   public static void main (String[] args){ 
-int a = 1, b = 5, c = 2;
-int x,y,z,r,p,q; 
+float a = 1, b = 5, c = 2;
+float x,y,z,r,p,q; 
 float resultado;
 
 x = b * b; //b^2 = 25
 y = a * c;//2*1  =  2
-z = -4 +y;//-4+2 = -2
+z = -4 *y;//-4+2 = -2
 p = a * 2;//2*1  =  2
 q = x + z;//25-2  = 23
 resultado = q/p;//11 O 12
@@ -58,7 +58,7 @@ System.out.println(" Q VALE: " + q);
 }
 */
 //EJERCICIO 3
-import  javax.swing.JOptionPane;
+/*
 import  java.util.Random;
 import java.util.Scanner;
 public class Miaplicacion{
@@ -76,6 +76,7 @@ a = sc.nextInt();
 while (a < 0);
 do{
 System.out.println("VALOR DE B");
+
 b = sc.nextInt();	
 String cadena = " ";
 for(i = a; i <= b; i++){
@@ -83,14 +84,12 @@ for(i = a; i <= b; i++){
 		cadena = cadena+i+"-";
 	}
 }
-JOptionPane.showMessageDialog(null, "MULTIPLOS DE 5 SON" +cadena);
-res = b + a;
-limit=Integer.parseInt(JOptionPane.showInputDialog(null," LA SUMA DE LOS MULTLOS DE 5 ES:"+ res));
- 
- ;
+System.out.println( "MULTIPLOS DE 5 SON" +cadena);
+res = b+i;
+System.out.println(" LA SUMA DE LOS MULTLOS DE 5 ES:"+ res); 
   
 }while (b < 0);
-if(a<b){
+if(a>b){
 c = a;
 a = b;
 b = c;
@@ -107,6 +106,7 @@ suma = suma+i;
 //public String getNombre( ){
   //  return this.nombre;
   //}
+  */
 //EJERCICO 4
 /*
 import  javax.swing.JOptionPane;
@@ -122,8 +122,8 @@ Random r = new Random();
 		int i ; 
 		int posible = input("ADIVINA EL NUMERO ENTRE 1 Y 15");
 		while (numero != posible) { 
-			 for ( i = 1; i < 15; i++) 
-          	if(i > 50){
+		for ( i = 1; i < 15; i++) 
+          	if(i != posible){
         System.out.println("ERROR");  		
         }
         		else{
@@ -141,8 +141,8 @@ Random r = new Random();
 		return Integer.parseInt(JOptionPane.showInputDialog(text));	
 	}
 }
-*/
 
+*/
 
 
 
