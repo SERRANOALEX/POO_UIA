@@ -1,0 +1,92 @@
+
+//********PRACTICA 4 **********
+ 
+ //+++EJERCICIO 1+++
+
+import java.io.*;
+public class {
+  public static void main(String[]args)throws IOException{
+
+        int i;
+        String entrada;
+        String salida;
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(" frase a rotar :");
+        entrada=br.readLine();
+
+        for(i=0;i<=entrada.length()-1;i++){
+
+            entrada=entrada.charAt(entrada.length()-1)+ entrada.substring(0,entrada.length()-1);
+            System.out.println(entrada);
+        }
+       
+    }
+}
+
+//+++++++++EJERCICIO 2 +++++++
+/*
+import java.io.*;
+public class pruebas{
+ public static void main(String[] args) //Contar caracteres, palabras y lineas en un texto
+ {
+  final char eof = (char) - 1;
+  char car;
+  boolean palabra = false;
+  int ncaracteres = 0, npalabras = 0, nlineas = 0;
+  try  {
+   System.out.println("INTRODUZCA TEXTO " + "PULSE [ENTER] DESPUES DE CADA LINEA.");
+   System.out.println("PARA TERMINAR Ctrl+z Y ENTER \n");
+   while ((car = (char)System.in.read()) != eof)   {
+    //[Enter] = CRLF = \r\n
+    if (car == '\r') continue; //Le sigue un \n
+    ncaracteres++; //Contador de caracteres    
+    //Eliminar blancos, tabuladores y finales de linea entre palabras
+    if (car == ' ' || car == '\n' || car == '\t')
+    palabra  = false;
+    else if (!palabra){//comienza una palabra
+     npalabras++; //contador de palabras
+     palabra = true;
+    }
+    if (car == '\n')//Finaliza una linea
+     nlineas++;
+   }
+   System.out.println();
+   System.out.println(" CARACTERES "+ ncaracteres + " " + " PABLABRAS " + npalabras + " " + " LINEAS " + nlineas);
+  }
+  catch(IOException ignorada){}
+ }   
+}
+*/
+/*
+
+///********PRACTICA 5 *******
+///++++++EJERCICIO 1 +++++++
+
+import java.util.Scanner; 
+public class pruebas {
+    public static void main(String[] args){
+      int sum = 0, inputNum;
+      int contador;
+      float mean;
+      int x = 0;
+      Scanner NumScanner = new Scanner(System.in);
+      Scanner charScanner = new Scanner(System.in);
+ 
+      System.out.println("CANTIDAD NUMEROS PARA CALCULAR MEDIA");
+ 
+      contador = NumScanner.nextInt();
+ 
+      System.out.println("INGRESA " + contador + " NUMEROS");
+ 
+      for( x = 1; x<=contador ;x++){          
+          inputNum = NumScanner.nextInt();
+          sum = sum + inputNum;
+          System.out.println();
+      }
+ 
+      mean = sum / contador;
+      System.out.println("LA MEDIA DE " + contador + " NUMEROS ES " + mean);
+    }
+}
+*/
