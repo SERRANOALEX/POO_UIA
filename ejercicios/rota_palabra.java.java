@@ -1,11 +1,11 @@
 
 
-//********PRACTICA 5 **********
+//********PRACTICA 4 **********
  
  //+++EJERCICIO 1+++
 
 import java.io.*;
-public class Practica5{                 //lista de excepciones
+public class Practica4{                 //lista de excepciones
   public static void main(String[]args)throws IOException{
 
         int i;
