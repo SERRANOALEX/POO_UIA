@@ -1,3 +1,4 @@
+//    PRACTICA 2
  class tipos_dato {
 
  public static void main(String[] args) {
